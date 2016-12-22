@@ -73,5 +73,13 @@ class RecipeController extends Controller
 		}
 		return redirect()->action('RecipeController@index');
 	}
+	
+	public function deleteRecipe($id)	
+	{
+	Recipe2::findOrFail($id)->delete();
+	
+	return redirect('/')
+			->withInput();
+	}
 }
 	

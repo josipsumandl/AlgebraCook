@@ -41,6 +41,7 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('/recipes/edit/{id}', 'RecipeController@edit');
 	Route::post('/recipes/edit', 'RecipeController@update');
 	
+	Route::delete('/recipes/{id}', 'RecipeController@deleteRecipe');
 	/*
 		Ovdje treba dodati route za prikaz i editiranje recepata
 		 - popis recepata

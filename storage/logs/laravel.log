@@ -2573,3 +2573,6 @@ Stack trace:
 #41 D:\php\Josip\AlgebraCook\public\index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #42 D:\php\Josip\AlgebraCook\server.php(21): require_once('D:\\php\\Josip\\Al...')
 #43 {main}  
+[2016-12-22 19:44:12] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Recipe' not found' in D:\php\Josip\AlgebraCook\app\Http\Controllers\RecipeController.php:79
+Stack trace:
+#0 {main}  
