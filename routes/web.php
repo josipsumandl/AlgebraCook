@@ -31,6 +31,16 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('/', function () { return view('welcome'); });
 
 	// Recipes
+	Route::get('/recipes', 'RecipeController@index');
+	
+	Route::get('/recipes/add', 'RecipeController@add');
+	Route::post('/recipes/add', 'RecipeController@save');
+	
+	Route::get('/recipes/view/{id}', 'RecipeController@view');
+	
+	Route::get('/recipes/edit/{id}', 'RecipeController@edit');
+	Route::post('/recipes/edit', 'RecipeController@update');
+	
 	/*
 		Ovdje treba dodati route za prikaz i editiranje recepata
 		 - popis recepata
